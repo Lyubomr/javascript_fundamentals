@@ -11,8 +11,7 @@
   var partnerName = Z;
   var location = Y;
   var jobTitle = X;
-
-  console.log("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.")
+  console.log("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.");
 
 // EXERCISE: The Age Calculator
 
@@ -26,7 +25,7 @@
   var currentYear = 2016;
   var birthYear = 1987;
   var yearsOld  = currentYear - birthYear;
-  console.log("They are either " +  age )
+  console.log("They are either " + yearsOld + " or " + (yearsOld - 1));
 
 // EXERCISE: The Lifetime Supply Calculator
 
@@ -52,11 +51,11 @@
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Calculate the area based on the radius, and output "The area is NN".
 
-var radius = 5;
-var circumference = (radius * 2) * Math.PI
-var area = Math.PI * Math.pow(raidus, 2)
-console.log("The circumference is " + circumference);
-console.log("The area is " + area);
+  var radius = 5;
+  var circumference = (radius * 2) * Math.PI
+  var area = Math.PI * Math.pow(raidus, 2)
+  console.log("The circumference is " + circumference);
+  console.log("The area is " + area);
 
 // EXERCISE: The Temperature Converter
 
@@ -67,9 +66,9 @@ console.log("The area is " + area);
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
 
-var celsius = 34;
-var fahrenheit = 77;
-var cToF = (celsius * (9/5)) + 32;
-var fToC = (fahrenheit - 32) * (5/9);
-console.log(celsius + "°C" + " is " + cToF + "°F" )
-console.log(fahrenheit + "°F" + " is " + fToC + "°C" )
+  var celsius = 34;
+  var fahrenheit = 77;
+  var cToF = (celsius * (9/5)) + 32;
+  var fToC = (fahrenheit - 32) * (5/9);
+  console.log(celsius + "°C" + " is " + cToF + "°F");
+  console.log(fahrenheit + "°F" + " is " + fToC + "°C");

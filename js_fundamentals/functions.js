@@ -8,9 +8,14 @@
 // takes 4 arguments: number of children, partner's name, geographic location, job title.
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
-function tellFortune(numberOfChildren, partnerName, location, jobTitle) {
-  console.log("You will be a " + jobTitle + " in " + location + ", and married to " + partnerName + " with " + numberOfChildren + " kids.");
-}
+
+  function fortuneTeller(numberOfChildren, partnerName, geoLocation, jobTitle) {
+    console.log("You will be a " + jobTitle + " in " + geoLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.")
+  }
+  fortuneTeller(4, "Bessie", "Center of the Earth", "Bartender")
+  fortuneTeller(12, "Lassie", "Narnia", "Smithy")
+  fortuneTeller(1, "BabyDoll", "Pasture", "Centaur")
+
 
 // EXERCISE: The Age Calculator
 
@@ -23,6 +28,13 @@ function tellFortune(numberOfChildren, partnerName, location, jobTitle) {
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+
+  var calculateAge = function(birthYear){
+    var currentYear = new Date().getFullYear();
+    var currentAge = currentYear - birthYear;
+    console.log("You are either " + currentAge + " or " + (currentAge - 1));
+  };
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -33,6 +45,15 @@ function tellFortune(numberOfChildren, partnerName, location, jobTitle) {
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+  var calculateLifeSupply = function(age, snack, ammountPerDay){
+    var maxAge = 100;
+    var LeapYear = lifeLength  / 4;
+    var lifeLength = maxAge - age;
+    var lifeLength = lifeLength - 4;
+    var lifeSupply = lifeLength * (ammountPerDay * 365);
+    console.log("You will need " + lifeSupply + " " snack + "s" + " to last until the ripe old age of " + lifeLength);
+  }
 
 // EXERCISE: The Geometrizer
 
@@ -47,6 +68,17 @@ function tellFortune(numberOfChildren, partnerName, location, jobTitle) {
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
 
+  var calcCircumfrence = function(radius){
+    var circumference = (radius * 2) * Math.PI;
+    console.log("The circumference is " + circumference);
+  }
+
+  var calcArea = function(radius){
+    var area = Math.PI * Math.pow(radius, 2)
+    console.log("The area is " + area);
+  }
+
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
@@ -59,3 +91,13 @@ function tellFortune(numberOfChildren, partnerName, location, jobTitle) {
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+  var celsiusToFahrenheit = function(celsius){
+    cToF = (celsius * (9/5)) + 32;
+    console.log(celsius + "°C" + " is " + cToF + "°F");
+  }
+
+  var fahrenheitToCelsius = function(fahrenheit){
+    fToC = (fahrenheit - 32) * (5/9);
+    console.log(fahrenheit + "°F" + " is " + fToC + "°C");
+  }
