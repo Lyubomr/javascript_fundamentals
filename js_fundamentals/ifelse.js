@@ -7,6 +7,15 @@
 // returns whichever number is the greater (higher) number.
 // Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
 
+  var greaterNum = function(number1, number2){
+    if (number1 > number2) {
+      return number 1
+    }
+    else {
+    return number2
+   }
+  }
+
 // EXERCISE: The World Translator
 
 // Write a function named helloWorld that:
@@ -28,7 +37,3 @@
 // returns the number and pluralized form, like "5 cats" or "1 dog".
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-
-
-
-
