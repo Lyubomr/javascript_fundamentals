@@ -12,6 +12,13 @@
 // cinnamon
 // cumin
 // cocoa
+  var recipe = new Object();
+      recipe.name = "Burrito";
+      recipe.serving = 1;
+      recipe.ingredients = ["Tortilla", "Chicken", "Salsa", "Guac", "Cheese", "Beans"];
+  console.log(recipe.name);
+  console.log("Serves: " + recipe.serving);
+  console.log("Ingredients:" + recipe.ingredients);
 
 // EXERCISE: The Reading List
 
@@ -21,12 +28,46 @@
 // Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
+
+  var books = [{
+    title: "You don't know JS",
+    author: "Kyle Simpson",
+    alreadyRead: true
+  },
+  {
+    title: "Beautiful JavaScript",
+    author: "Anton Kovalyov",
+    alreadyRead: false
+  },
+  {
+    title: "Harry Potter and the Cursed Child",
+    author: "J.K. Rowling",
+    alreadyRead: false
+  }
+];
+
+for (var i = 0; i < books.length; i++) {
+  var book = books[i];
+
+  if (book.alreadyRead = true){
+    console.log("You've already read " + book.title + " by " + book.author);
+  }
+  else if (book.alreadyRead = false) {
+    console.log("You still need to read " + book.title + " by " + book.author);
+  }
+
+}
+
 // EXERCISE: The Movie Database
 
 // It's like IMDB, but much much smaller!
 
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
-
-
-
+var movie = new Object();
+    movie.title = "Deadpool",
+    movie.duration = 120,
+    movie.stars = ["Ryan Reynolds", "Morena Baccari", "T.J. Miller"],
+    movie.info = function(){
+  console.log(this.title + " lasts for " + this.duration + " mintues. Stars: " + this.stars[0] + ", " + this.stars[1] + ", " + this.stars[2] + "." )
+};

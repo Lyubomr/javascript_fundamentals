@@ -9,10 +9,10 @@
 
   var greaterNum = function(number1, number2){
     if (number1 > number2) {
-      return number 1
+      return number1;
     }
     else {
-    return number2
+    return number2;
    }
   }
 
